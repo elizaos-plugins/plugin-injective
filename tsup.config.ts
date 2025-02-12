@@ -25,6 +25,7 @@ export default defineConfig({
   ],
 
   external: [
+        "@elizaos/core",
     ...builtinModules.filter(mod => mod !== 'util'),
     ...Object.keys(pkg.dependencies || {})
             .filter(dep => !['form-data', 'combined-stream', 'delayed-stream',
